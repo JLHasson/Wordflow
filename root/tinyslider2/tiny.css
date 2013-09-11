@@ -1,0 +1,16 @@
+* {margin:0px 0px 0px 0px; padding:0px 0px 0px 0px}
+body {font:12px Verdana,Arial; color:#555; background:#ddd}
+p {line-height:1.4; margin-bottom:12px}
+#wrapper {width:550px; margin:50px 0px 0px 0px}
+#container {position:relative; background:#0099F; padding:4px; height:350px; }
+.sliderbutton {float:left; width:25px; height:350px; cursor:pointer}
+#slideleft { -50px -265px no-repeat}
+#slideleft:hover {background-position:-0 -265px}
+#slideright { 0 90px no-repeat}
+#slideright:hover {background-position:-50px 90px}
+#slider {float:left; position:relative; overflow:auto; width:438px; height:350px}
+#slider ul {position:absolute; list-style:none; top:0; left:0}
+#slider li {float:left; width:438px; height:350px}
+.pagination {position:absolute; top:40px; right:61px; list-style:none; height:25px}
+.pagination li {float:left; cursor:pointer; height:8px; width:8px; background:#ccc; margin:0 4px 0 0; border:1px solid #fff}
+.pagination li:hover, li.current {background:#fff}

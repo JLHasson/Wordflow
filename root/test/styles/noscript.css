@@ -1,0 +1,5 @@
+header .menu ul li:last-child:hover ul.dropdown {
+	
+	display:block;
+	
+}

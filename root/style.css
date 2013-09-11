@@ -1,0 +1,792 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/** UNDO RESET ***/
+
+/* Strong and em */
+.wrapOverall strong, .wrapOverall th { font-weight: bold; }
+.wrapOverall em, .wrapOverall address, .wrapOverall caption, .wrapOverall cite { font-style: italic; }
+/* Table */
+.wrapOverall table { display: table; border-spacing: 2px; border-collapse: separate; }
+.wrapOverall tr { display: table-row; vertical-align: inherit; }
+.wrapOverall td { display: table-cell; border-spacing: 2px; padding: 2px; vertical-align: inherit; text-align: inherit; padding: 1px; border-collapse: none; }
+.wrapOverall th { display: table-cell; vertical-align: inherit; font-weight: bold; padding: 1px; border-collapse: none; }
+/* Block Items */
+.wrapOverall p { display: block; margin: 1em 0; }
+.wrapOverall blockquote { display: block; margin: 1em 40px; }
+.wrapOverall address { display: block; font-style: italic; }
+.wrapOverall center { display: block; text-align: center; }
+/* Headers */
+.wrapOverall h1 { display: block; font-size: 2em; font-weight: bold; margin: .67em 0; }
+.wrapOverall h2 { display: block; font-size: 1.5em; font-weight: bold; margin: .83em 0; }
+.wrapOverall h3 { display: block; font-size: 1.17em; font-weight: bold; margin: 1em 0; }
+.wrapOverall h4 { display: block; font-weight: bold; margin: 1.33em 0; }
+.wrapOverall h5 { display: block; font-size: 0.83em; font-weight: bold; margin: 1.67em 0; }
+.wrapOverall h6 { display: block; font-size: 0.67em; font-weight: bold; margin: 2.33em 0; }
+/* Lists */
+.wrapOverall ul { display: block; list-style-type: disc; margin: 1em 0; padding-left: 40px; }
+.wrapOverall ol { display: block; list-style-type: decimal; margin: 1em 0; padding-left: 40px; }
+.wrapOverall li { display: list-item; }
+/* Pre */
+.wrapOverall pre, .wrapOverall code { display: block; font-family: Courier New; white-space: pre; margin: 1em 0; }
+
+/**  END UNDO RESET ***/
+
+
+a {
+	border:0;
+}
+img {
+	border:0;
+}
+body {
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;
+	z-index: 1;
+	margin: 0px 0px 0px 0px;
+}
+
+.wrapOverall {
+	width:987px;
+	padding-top:65px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.registerPageWrapOverall {
+	width:600px;
+	padding-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.welcomePageWrapOverall {
+	width:987px;
+	height:720px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+hr {	
+border:none;	
+border-top:1px #CCCCCC solid;
+height: 1px;
+
+}
+/*############################*/
+/*    Welcome Screen Rules    */
+/*############################*/
+
+.bgWelcome {
+	width:987px;
+	height:705px;
+	background-image:url(images/bg_content.png);
+	background-repeat:none;
+	
+	
+}
+.bgLogin {
+	margin-top:150px;
+	float:right;
+	width:400px;
+}	
+
+.bgRegister{
+	background-color:#0099FF;
+	/* margin:150px; */
+	width:601px;
+	
+}
+.welcomeLogo {
+	float:left;
+	width:587px;
+	height:650px;
+	
+}
+.mainLogo {
+	margin-left:0px;
+	margin-top:0px;
+	
+}
+.topLogo {
+	margin:0px 0px 0px 60px;
+}
+/*
+.logo {
+	width: 145px;
+	height: 70px;
+}
+*/
+
+.loginHereTextWrap {
+	float:left;
+	
+}
+.loginHereText {
+	margin-bottom:5px;
+	margin-left:30px;
+	text-decoration:none;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:18px;
+	
+}
+.restOfLoginWrap {
+	float:right;
+	margin-right:100px;
+	
+}
+
+.facebook_btn {
+	background-image:url(images/facebook_btn_start.png);
+	margin-bottom:10px;
+	background-repeat:no-repeat;
+	height:8px;
+	width:37px;
+	float:right;
+	
+}
+.facebook_btn:hover {
+	background-image:url(images/facebook_btn_highlight.png);
+
+}
+.facebook_btn:active {
+	background-image:url(images/facebook_btn_click.png);
+	
+}
+/*.twitter_btn {
+	background-image:url(images/twitter_btn_start.png);
+	margin-bottom:10px;
+	background-repeat:no-repeat;
+	height:47px;
+	width:220px;
+	
+}
+.twitter_btn:hover {
+	background-image:url(images/twitter_btn_highlight.png);
+
+}
+.twitter_btn:active {
+	background-image:url(images/twitter_btn_click.png);
+	
+}
+*/
+.noFacebook {
+	width:210px;
+	margin-top:15px;
+	margin-left:3px;
+}
+.dontHave {
+	float:left;
+	text-decoration:none;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:8px;
+	
+}
+ 
+
+.loginHereLink a {
+	text-decoration:none;
+	float:right;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:8px;
+	
+	
+}
+.loginHereLink a:hover {
+	text-decoration:underline;
+	
+}
+
+/*#######################*/
+/*     SIDEBAR Rules     */
+/*#######################*/
+.sidebar {
+	position: fixed;
+	left: 0px;
+	top:200px;
+	height:215px;
+	width:60px;
+	background-image:url("images/sidebar/bg_sidebar.png");
+	background-repeat:repeat-y;
+	border-right:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	
+	
+}
+.facebook_sidebar {
+	width:53px;
+	margin-left:3px;
+	margin-top:3px;
+}
+.twitter_sidebar {
+	width:53px;
+	margin-left:3px;
+	margin-top:3px;
+}
+.googleplus_sidebar {
+	width:53px;
+	margin-left:3px;
+	margin-top:3px;
+}
+.youtube_sidebar {
+	width:53px;
+	margin-left:3px;
+	margin-top:3px;
+
+}
+.mail_sidebar {
+	width:53px;
+	margin-left:3px;
+	margin-top:3px;
+
+}
+
+/*#######################*/
+/*  SIGN IN PAGE Rules   */
+/*#######################*/
+.signInPageContentLeft {
+	margin-top:50px;
+	width:807px;
+	float:left;
+		
+}
+/*####################*/
+/*  HOME PAGE Rules   */
+/*####################*/
+
+.contentLeft {
+	width:690px; 
+	float:left; 
+	border-left:1px solid #DDDDDD;
+	margin:0px 0px 0px 10px;
+	
+}
+.outputHeader {
+	width:690px;
+	height:70px;
+	margin:0px 0px 0px 10px;
+	text-decoration:none;
+	color:black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.outputHeaderRight{
+	color:white;
+	background-color: #0099FF;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.outputHeaderRightUnderline a{
+	text-decoration: none;
+}
+.homePost {
+	margin:0px 0px 0px 10px;
+}
+.outputSubheader {
+	
+	padding-left:520px;
+	
+}
+.outputDiv {
+	width:690px;
+	
+}
+.contentRight {
+	width:270px; 
+	float:right; 
+	background-color:#FFFFFF;
+	border-right:1px solid #DDDDDD;
+	margin:0px 0px 0px 0px;
+}
+.userMain {
+	width:270px;
+	height:100px;
+}
+.userPic {
+	float:left;
+	width:80px;
+	height:80px;
+	margin:10px 0px 0px 10px; 
+	overflow:hidden;
+	border:2px #0099FF solid;
+}
+.userInfo{
+	float:right;
+	width:175px;
+	height:80px;
+}
+.userName{
+	width:170px;
+	height:25px;
+}
+.userName a{
+	text-decoration:none;
+	color:black;
+	margin-left:10px; 
+	font-size:20px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userName a:hover {
+	text-decoration:underline;
+	color:black;
+	margin-left:10px; 
+	font-size:20px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userNameSpan a:hover {
+	margin-left:10px; 
+	font-size:20px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userInbox{
+	width:150px;
+	margin-left:10px;
+}
+.userInbox a {
+	text-decoration:none; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userInbox a:hover {
+	text-decoration:underline; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userNotifications{
+	width:150px;
+	margin-left:10px;
+	padding-top:3px;
+}
+.userNotifications a {
+	text-decoration:none; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.userNotifications a:hover {
+	text-decoration:underline; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.bioBody {
+	margin-top: 20px;
+}
+
+/*####################*/
+/*	Browse Page Rules */
+/*####################*/
+
+.browseButtons {
+	margin:0px 10px 10px 10px;
+	padding:15px 0px 0px 60px;
+	background-color:#F0F0F0;
+	border:1px solid #DDDDDD;
+	width:380px;
+	height:50px;
+	font-size:32px;
+	color:#0099FF;
+}
+
+.browseButtonsLink {
+	text-decoration:none;
+}
+.browseButtons:hover {
+	background-color:#E8E8E8;	
+}
+/*#########################################*/
+/*             Inbox Rules                 */
+/*#########################################*/
+
+.hiddenNewMessageContain {
+	z-index: 2;
+	position: relative;
+	margin-bottom: -75;
+	display: none;
+}
+.message_name a {
+	text-decoration:none; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.message_name a:hover {
+	text-decoration:underline; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+/* Reply Button */
+.hiddenDiv a {
+	text-decoration:none; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.hiddenDiv a:hover {
+	text-decoration:underline; 
+	color:#0099FF; 
+	font-size:16px; 
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+/*#########################################*/
+/*    Special Word of Mouth Color Rules    */
+/*#########################################*/
+.white_text {
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.black_text  {
+	text-decoration:none;
+	color:black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:18px;
+}
+.blue_text {
+	text-decoration:none;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.blue_text a {
+	text-decoration:none;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.black_text_close {
+	margin:0px 0px 0px 5px;
+}
+.black_text_close a {
+	text-decoration:none;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.black_text_close a:hover {
+	text-decoration:underline;
+}
+.blue_text a:hover {
+	text-decoration:underline;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/*####################################################*/
+/*    Drop Down Buttons Script for Top of Newsfeed    */
+/*####################################################*/
+
+.boughtItDropDown {
+	background-image:url(images/newsfeed/bought_it.png);
+	background-size:180px;
+	background-repeat:no-repeat;
+	height:30px;
+	width:181px;
+	border:none;
+	
+}
+.boughtItDropDown:active {
+	background-image:url(images/newsfeed/bought_it_click.png);
+
+}
+.referralDropDown {
+	background-image:url(images/newsfeed/referral.png);
+	background-size:180px;
+	background-repeat:no-repeat;
+	height:30px;
+	width:181px;
+
+}
+.referralDropDown:active {
+	background-image:url(images/newsfeed/referral_click.png);
+
+}
+
+/*#############################################*/
+/*    Displaying Reviews on Home Page Rules    */
+/*#############################################*/
+
+.displayReview {
+	width:600px;
+	height:100px;
+	float:left;
+	margin:10px 10px 10px 10px;
+}
+.review_prof_pic {
+	width:80px;
+	margin:0px 0px 5px 5px;
+}
+.review_user_name {
+	margin:3px 0px 5px 5px;
+}
+.review_user_name a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.review_user_name a:hover{
+	text-decoration:underline;
+}
+.bought_it_newsfeed {
+	text-decoration:none;
+	color:#00B347;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0px 0px 0px 5px;
+}
+.referral_newsfeed {
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin:0px 0px 0px 5px;
+}
+.review_title {
+	text-decoration:none;
+	color:black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.review_title_p a{
+	text-decoration:none;
+	color:black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.review_title_p a:hover{
+	text-decoration:underline;
+}
+p.review_body_p {
+	color:#080808;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:22px; /* Harrison Added this for more space between lines - delete to go back*/
+}
+.review_date_p {
+	color:#AAAAAA;
+	font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left:10px;
+}
+.review_stars {
+	float:right;
+	margin:0px 10px 0px 0px;
+}
+.review_read_more a{
+	text-decoration:none;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left:10px;
+}
+.review_read_more a:hover{
+	text-decoration:underline;
+	color:#0099FF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left:10px;
+}
+.review_black_font_link {
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.review_black_font_link a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+}
+.review_black_font_link a:hover {
+	text-decoration:underline;
+
+}
+.review_website_link {
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.review_website_link a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+}
+.review_website_link a:hover {
+	text-decoration:underline;
+
+}
+/*#############################################*/
+/*    Displaying Profile on Home Page Rules    */
+/*#############################################*/
+
+.googleAdvertisements {
+	float:left;
+	margin:50px 0px 0px 0px;
+}
+/*####################*/
+/*    Profile Rules    */
+/*####################*/
+.profilePicIcon {
+	width:218px; 
+	height:218px; 
+	overflow:hidden; 
+	border:5px #0099FF solid;
+}
+.editBioBox {
+	border:#999 1px solid; 
+	background-color:#FBFBFB; 
+	width:200px; 
+	display: none; 
+	z-index: 2; 
+	position: relative;
+	margin-bottom: -75px;
+}
+.profileLocation {
+	z-index: 1;
+	position: relative;
+}
+.fullProfileContentDiv {
+	text-align: center;
+	margin-top: 15px;
+}
+.viewAllPosts a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.viewAllPosts a:hover{
+	text-decoration:underline;
+}
+/*#####################################################*/
+/*    Displaying Reviews on Post Content Page Rules    */
+/*#####################################################*/
+.commentContainer {
+	margin:10px 10px 10px 10px;
+	text-decoration:none;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.uploadedPicture{
+	margin:10px 10px 10px 10px;
+	text-decoration:none;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.returnHome {
+	margin:10px 10px 10px 10px;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.returnHome a {
+	color:#000000;
+	text-decoration:none;
+}
+.returnHome a:hover {
+	text-decoration:underline;
+}
+/*#########################*/
+/*    Friends Box Rules    */
+/*#########################*/
+.friendsBox {
+	float:left;
+	margin:50px 0px 0px 0px;
+}
+.friends_box_name a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.friends_box_name a:hover{
+	text-decoration:underline;
+}
+.user_friends_header {
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.view_all_friends {
+	padding:0px 5px 0px 0px
+}
+.view_all_friends a{
+	text-decoration:none;
+	color:black;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.view_all_friends a:hover{
+	text-decoration:underline;
+}
+
+.externalLinks a{
+	text-decoration:none;
+	color:#0099FF;
+	font-size:18px;
+}
+.externalLinks a:hover {
+	text-decoration:underline;
+
+}
+
+/*####################*/
+/*    Footer Rules    */
+/*####################*/
+
+.friendResultsHeader {
+	font-size:18px;
+	text-decoration:bold;
+}
+.everyoneResultsHeader {
+	font-size:18px;
+	text-decoration:bold;
+}
+.feedback {
+	text-align: left;
+}
+.feedbackText {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+p.feedbackLink {
+	margin:0;
+	margin-left:10px;
+	line-height:18px;
+	height:70px;
+	width:690px;
+}
+.feedbackPara {
+	line-height:22px;
+}
+p.errorMessage {
+	color: #FF0000;
+}
+.fb_post {
+	margin-left: 143px;
+	margin-top: 7px;
+}
+/*####################*/
+/*    Footer Rules    */
+/*####################*/
+
+.subtext {
+	font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	float:right;
+	margin-right:10px;
+	margin-bottom:20px;
+	margin-top:25px;
+}
+.subtext a {
+	text-decoration:none;
+	color:#0099FF;
+}
+.subtext a:hover {
+	text-decoration:underline;
+}

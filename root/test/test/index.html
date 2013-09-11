@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>SVG Image</title>
+		<style type="text/css">
+			
+			* {
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			
+			body {
+				background:#0099ff;
+				margin:30px;
+			}
+			
+			.border {
+			
+				border:1px solid #18486c;
+				width:260px;
+			
+			}
+			
+			.menu {
+				font-family:Helvetica Neue;
+				font-size:13px;
+				cursor:pointer;
+				text-shadow:0px -1px #206390;
+				background-image:url(gradient.svg);
+/* 				background-image:-webkit-linear-gradient(#0099ff, #0078e3); */
+				height:32px;
+				width:260px;
+				background-size:100% 100%;
+				
+				
+			}
+			
+			li {
+				border:1px solid #40b2ff;
+				border-right:1px solid #18486c;
+				width:85px;
+				height:30px;
+				float:left;
+				color:white;
+				text-align:center;
+				line-height:30px;
+			}
+			
+			li:hover {
+ 				background-image:url(gradient2.svg);
+/*     			background:-webkit-linear-gradient(#419cff, #0078e3);  */
+    
+			}
+			
+			li:active {
+    
+    			background:#0099ff;      
+			}
+			
+			li:last-child {
+				
+				border-right:none;
+		
+			}
+			
+			a {
+				text-decoration:none;
+				color:white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="border">
+			<div class="menu">
+				<ul>
+							<li><a href="#">Friends</a></li>
+							<li><a href="#">Browse</a></li>
+							<li><a href="#">Messages</a></li>
+						</ul>
+			</div>
+		</div>
+	</body>
+</html>
